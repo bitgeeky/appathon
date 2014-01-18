@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:background="@drawable/background" >
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="5dp"
+        android:layout_y="282dp"
+        android:text="1. Add your family members by going into Family Add Member.\n
+2. All your family members are visible there.\n
+3. Use Vaccination to look at vaccination card.\n
+4. Notifications will take you to notifications page.\n
+5. Updates of Polio camps will be posted there, one can acknowledge having given polio drops to his/her kids by simply clicking.\n
+6. This data is used by the Government Of India.\n
+7. Other health updates sent by the health department will also be posted there\n"
+        android:textColor="#000" />
+
+</AbsoluteLayout>
