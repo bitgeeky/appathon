@@ -2,14 +2,17 @@ package com.example.testing;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Registration extends Activity{
-
+	public static final String DATA_PREFERENCES_USER = "AddUser";
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -24,10 +27,20 @@ public class Registration extends Activity{
 				// TODO Auto-generated method stub
 				if(name.getText().toString()==""||address.getText().toString()=="")
 				{
+					 Toast.makeText(getApplicationContext(), "Invalid Entries" , Toast.LENGTH_SHORT).show();
 					//do some shit to verify that the input is valid
 				}
 				else
 				{
+					 
+					SharedPreferences example = getSharedPreferences(DATA_PREFERENCES_USER, 0);
+					Editor editor = example.edit();
+	      			editor.putString("uname",name.getText().toString());
+	      			editor.putString("uadd",address.getText().toString());
+	      			editor.commit();
+	      			finish();
+	      			Intent intent = new Intent(Registration.this,StartScreen.class);
+					startActivity(intent);
 					//this is to start the new intent with required data being sent to it.
 					
 					//Intent intent = new Intent(getApplicationContext(),someClass.class);

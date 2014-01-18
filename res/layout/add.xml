@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/aname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:hint="Enter Name"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/agen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adob"
+        android:layout_below="@+id/adob"
+        android:layout_marginTop="28dp"
+        android:hint="Enter Gender"
+
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/adob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aname"
+        android:layout_below="@+id/aname"
+        android:layout_marginTop="22dp"
+        android:hint="Enter Date of Birth"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ok_v2" />
+
+</RelativeLayout>
+</ScrollView>

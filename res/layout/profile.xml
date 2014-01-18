@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@drawable/background">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="22dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/dob"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gen"
+        android:layout_alignBottom="@+id/gen"
+        android:layout_toRightOf="@+id/dob"
+        android:text="details .."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
+</ScrollView>

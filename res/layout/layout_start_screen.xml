@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" 
+  >
+<RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
@@ -18,47 +25,62 @@
 
 <Button
     android:id="@+id/notification_button"
-    android:layout_width="fill_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@+id/app_name_text"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/notifications"
     android:onClick="buttonClick"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:text="NOTIFICATION"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:textAlignment="center"
     android:textSize="30sp" />
-
-<Button 
-    android:text="FAMILY"
-    android:id="@+id/family_button"
-    android:onClick="buttonClick"
-    android:textSize="30sp"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:layout_below="@+id/notification_button"
-    />
-<Button 
-    android:text="INSTRUCTIONS"
-    android:id="@+id/instructions_button"
-    android:onClick="buttonClick"
-    android:textSize="30sp"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:layout_below="@+id/family_button"
-    />
 
 <Button
     android:id="@+id/vacbutton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentRight="true"
+    android:layout_alignLeft="@+id/instructions_button"
     android:layout_below="@+id/instructions_button"
-    android:layout_marginTop="24dp"
-    android:text="Vaccination" />
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/vacc" />
+
+<Button
+    android:id="@+id/family_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/notification_button"
+    android:layout_below="@+id/notification_button"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/family"
+    android:onClick="buttonClick"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:textSize="30sp" />
+
+<Button
+    android:id="@+id/instructions_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/family_button"
+    android:layout_below="@+id/family_button"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/help"
+    android:onClick="buttonClick"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:textSize="30sp" />
+<ImageView 
+    android:id="@+id/languages"
+    android:background="@drawable/language_white"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/vacbutton"
+     android:layout_marginTop="20dp"
+     />
 
 </RelativeLayout>
+</ScrollView>
