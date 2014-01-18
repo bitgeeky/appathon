@@ -10,31 +10,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    
-<TextView 
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/app_name_text"
-    android:text="APP NAME"
-    android:textSize="40dp"
-    android:paddingTop="15dp"
-    android:paddingBottom="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    />
-
-<Button
-    android:id="@+id/notification_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/app_name_text"
-    android:layout_centerHorizontal="true"
-    android:background="@drawable/notifications"
-    android:onClick="buttonClick"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:textAlignment="center"
-    android:textSize="30sp" />
 
 <Button
     android:id="@+id/vacbutton"
@@ -72,7 +47,7 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:textSize="30sp" />
-<ImageView 
+<Button 
     android:id="@+id/languages"
     android:background="@drawable/language_white"
     android:layout_centerHorizontal="true"
@@ -81,6 +56,28 @@
     android:layout_below="@id/vacbutton"
      android:layout_marginTop="20dp"
      />
+
+<Button
+    android:id="@+id/notification_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="154dp"
+    android:background="@drawable/notifications"
+    android:onClick="buttonClick"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:textAlignment="center"
+    android:textSize="30sp" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/pd" />
 
 </RelativeLayout>
 </ScrollView>

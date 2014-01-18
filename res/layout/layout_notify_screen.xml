@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_layout_ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/test_layout_ll" 
-    android:background="@drawable/background" 
-    >
-    
-    <TextView 
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="this is the initial text"
-        android:textSize="30sp"
-        />
-   
-</LinearLayout>
+        android:layout_x="28dp"
+        android:layout_y="12dp"
+        android:src="@drawable/title_notifications" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="96dp"
+        android:text="   Pulse Polio Camp !"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="112dp"
+        android:layout_x="52dp"
+        android:layout_y="158dp"
+        android:text="Polio Drops Camp in your neighbourhood .\nDate : 20 January\nTimings :\n8:00am - 12:00pm "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_x="54dp"
+        android:layout_y="302dp"
+        android:text="    Did they Attend  ?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_linear_layout"
+        android:layout_x="90dp"
+        android:layout_y="390dp"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="85dp"
+        android:layout_y="333dp"
+        android:text="*Click to Acknowledge"
+        android:textColor="#000" />
+
+</AbsoluteLayout>
