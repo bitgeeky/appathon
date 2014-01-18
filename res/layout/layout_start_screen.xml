@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/app_name_text"
+    android:text="APP NAME"
+    android:textSize="40dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+
+<Button
+    android:id="@+id/notification_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/app_name_text"
+    android:onClick="buttonClick"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text="NOTIFICATION"
+    android:textAlignment="center"
+    android:textSize="30sp" />
+
+<Button 
+    android:text="FAMILY"
+    android:id="@+id/family_button"
+    android:onClick="buttonClick"
+    android:textSize="30sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_below="@+id/notification_button"
+    />
+<Button 
+    android:text="INSTRUCTIONS"
+    android:id="@+id/instructions_button"
+    android:onClick="buttonClick"
+    android:textSize="30sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_below="@+id/family_button"
+    />
+
+<Button
+    android:id="@+id/vacbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/instructions_button"
+    android:layout_marginTop="24dp"
+    android:text="Vaccination" />
+
+</RelativeLayout>

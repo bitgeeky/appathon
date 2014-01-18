@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:text="REGISTRATION"
+    android:id="@+id/registration_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40sp"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+<TextView 
+    android:text="NAME:"
+    android:id="@+id/name_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/registration_text"
+    android:textSize="30sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+<EditText 
+    android:hint="Enter Name Here..."
+    android:id="@+id/name_input"
+    android:layout_below="@+id/name_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+<TextView 
+    android:text="ADDRESS:"
+    android:id="@+id/address_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/name_input"
+    android:textSize="30sp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+<EditText 
+    android:hint="Enter Address Here..."
+    android:id="@+id/address_input"
+    android:layout_below="@+id/address_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    />
+
+<Button
+    android:id="@+id/registration_done"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="DONE" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    />
+
+</RelativeLayout>
