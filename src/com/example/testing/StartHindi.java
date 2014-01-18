@@ -10,25 +10,24 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class StartScreen extends Activity{
+public class StartHindi extends Activity{
 	public static final String DATA_PREFERENCES_USER = "AddUser";
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.layout_start_screen);
+		setContentView(R.layout.layout_start_screen_hindi);
 		SharedPreferences example = getSharedPreferences(DATA_PREFERENCES_USER, 0);
 		Button vb = (Button)findViewById(R.id.vacbutton);
 		Button fb = (Button)findViewById(R.id.family_button);
 		Button nb = (Button)findViewById(R.id.notification_button);
 		Button ib = (Button)findViewById(R.id.instructions_button);
-		Button hindi = (Button)findViewById(R.id.languages);
-		hindi.setOnClickListener(new OnClickListener() {
+		Button english = (Button)findViewById(R.id.languages);
+		english.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
-				startActivity(new Intent(StartScreen.this, StartHindi.class));
+				startActivity(new Intent(StartHindi.this, StartScreen.class));
 			}
 		});
 		vb.setOnClickListener(new OnClickListener() {
@@ -36,7 +35,7 @@ public class StartScreen extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(StartScreen.this, VaccinationScreen.class));
+				startActivity(new Intent(StartHindi.this, VaccinationScreen.class));
 			}
 		});
 vb.setOnClickListener(new OnClickListener() {
@@ -44,7 +43,7 @@ vb.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(StartScreen.this, VaccinationScreen.class));
+				startActivity(new Intent(StartHindi.this, VaccinationScreen.class));
 			}
 		});
 fb.setOnClickListener(new OnClickListener() {
@@ -52,7 +51,7 @@ fb.setOnClickListener(new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		startActivity(new Intent(StartScreen.this, Family.class));
+		startActivity(new Intent(StartHindi.this, Family.class));
 	}
 });
 nb.setOnClickListener(new OnClickListener() {
@@ -60,7 +59,7 @@ nb.setOnClickListener(new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		startActivity(new Intent(StartScreen.this, NotificationScreen.class));
+		startActivity(new Intent(StartHindi.this, NotificationScreen.class));
 	}
 });
 ib.setOnClickListener(new OnClickListener() {
@@ -68,7 +67,7 @@ ib.setOnClickListener(new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		startActivity(new Intent(StartScreen.this, Instructions.class));
+		startActivity(new Intent(StartHindi.this, Instructions.class));
 	}
 });
 
@@ -79,7 +78,7 @@ ib.setOnClickListener(new OnClickListener() {
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
 		super.onBackPressed();
-		Intent intent = new Intent(StartScreen.this, MainActivity.class);
+		Intent intent = new Intent(StartHindi.this, MainActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		intent.putExtra("Exit me", true);
 		startActivity(intent);

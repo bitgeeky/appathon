@@ -20,4 +20,12 @@
 7. Other health updates sent by the health department will also be posted there\n"
         android:textColor="#000" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="17dp"
+        android:src="@drawable/title_help" />
+
 </AbsoluteLayout>

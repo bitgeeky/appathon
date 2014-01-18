@@ -43,7 +43,7 @@ public class NotificationScreen extends Activity {
 		int x = 2;
 		example = getSharedPreferences(DATA_PREFERENCES_USER, MODE_PRIVATE);
 		
-		final LinearLayout ll = (LinearLayout)findViewById(R.id.test_layout_ll);
+		final LinearLayout ll = (LinearLayout)findViewById(R.id.notification_linear_layout);
 		
 		LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
 				LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
