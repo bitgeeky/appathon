@@ -6,3 +6,10 @@ appathon
 
 The Application Requires to be deployed on a good server so that , Notifications can be broadcasted , apart from polio , Awareness for other diseases can also be created and a better vaccination system.
 Application to be ported in local/multi languages , apart from current Hindi and English version.
+
+# Future Scope 
+Since this application is targated to to mostly rural and illiterate users , so the interenet connectivity should be minimal.
+The messages should be conveyed mostly through voice signals or interactive animations  
+
+The Application should not only be focussed on Vaccination and Polio Drops, but should has health notifications in general 
+also to broadcast any health related news and get response from users.
